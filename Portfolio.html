@@ -2,50 +2,66 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <title>My Protfolio</title>
+  <!--dette meta er med til at scale på mobile overflader -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="stylesheet" href="portfolio.css">
-  <title>protfolio</title>
 </head>
 
 <body>
-
-  <div class="navbar">
-    <a href="#" class="logo">Animations</a>
-    <ul class="nav">
-      <li><a href="#home">home</a></li>
-      <li><a href="#about">about</a></li>
-      <li><a href="#portfolio">portfolio</a></li>
-      <li><a href="#contact">contact</a></li>
+  <nav>
+    <ul>
+      <li><a href="#section4">Contact</a></li>
+      <li><a href="#section3">Projects</a></li>
+      <li><a href="#section2">About</a></li>
+      <li><a href="#section1">Home</a></li>
     </ul>
-  </div>
-  <div class="banner-area" id="home" <div class="text-part1">
-  </div>
-  </div>
+  </nav>
 
-  <div class="about-area" id="about" <div class="text-part2">
-    <h1>about Area</h1>
-    <img class="headshot" src="headshot.jpg" alt="photo of mikkel" style="width: 250px">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisici </p>
+  <div id="section1">
+    <h1> this is Home section</h1>
   </div>
+  <div id="section2">
+    <h1> this is About section</h1>
   </div>
+  <div id="section3">
+<div class="wrapper">
+  <h1>flexboks image gallery</h1>
+    <div class="img-area">
+      <div class="single.imd"><img src="swan.png" alt=""></div>
+  
 
 
-  <div class="port-area" id="portfolio" <div class="text-part3">
-    <h1>porfolio Area</h1>
-    <p>Lorem ipsum laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-      deserunt mollit anim id est laborum.</p>
-
-  </div>
-  </div>
-
-  <div class="contact-area" id="contact" <div class="text-part4">
-    <h1>contact Area</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
 
   </div>
 
+  <!--html for contact form-->
+  <div id="section4">
+    <h1> Contact Me </h1>
+    <div class="border"></div>
+    <form>
+      <input type="text" class="contact-form-text" placeholder="your Name">
+      <input type="email" class="contact-form-text" placeholder="your Email">
+      <input type="text" class="contact-form-text" placeholder="your Phone">
+      <textarea class="contact-form-text" placeholder="Message"> </textarea>
+    </form>
+    <div class="button">
+      <a> send </a>
+    </div>
   </div>
-</body>
+
+ <br>
+ <br>
+ <br>
+ <br>
+<!--her slutter contact form-->
+  <div class="footer-main">
+    <p>Designed by Mikkel A. Simmelkjær Olsen </p>
+  </div>
+
+
+</div>
 
 </html>

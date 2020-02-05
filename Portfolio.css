@@ -1,115 +1,171 @@
-* {
-  margin: 0;
-  padding: 0;
+/* der bestemmer jeg om scroll skal være mere flydende end at den hopper hårdt fra område til område*/
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin 0;
-  padding 0;
-  font-family: poppings;
-}
-
-.navbar {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  background-color: #2a272a;
-  width: 100%;
-  height 70px;
-  z-index: 1;
-}
-
-.nav {
-  display: flex;
-  justify-content: right;
-  list-style: none;
-  margin-right: 2%;
-}
-
-.logo {
-  flex: 1 1 auto;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: bold;
-  font-size: 35px;
-}
-
-a {
-  margin: 15px;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-a:hover {
-  color: #677381;
-}
-
-.banner-area {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.headshot {}
-
-.about-area, {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  height: 700px;
-}
-
-.port-area, .contact-area {
-  position: relative display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  height: 700px;
-}
-}
-
-.headshot {
-  width: 500px;
-  height: 375px;
-}
-
-.text-part1, .text-part2, .text-part3, .text-part4 {
-  width: 65%;
-  height: 80%;
-}
-
-h1 {
-  font-size: 50px;
-}
-
-p {
-  font-size: 24px;
-  line-height: 50px;
   margin: 0;
+  padding: 0;
+  font-family: arial;
+}
+
+/* her styrer jeg overskrifterne på siderne*/
+h1 {
+  margin: 100px;
+  text-align: center;
   padding: 0;
 }
 
-.about-area, .contact-area {
-  background-color: #82a0aa;
+/* her styres style for navigationsbaren */
+nav {
+  width: 100%;
+  background: #2a272a;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
 }
 
-.port-area {
+/*her styres style for unorderet list*/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/*her styres listen*/
+li {
+  float: right;
+}
+
+/* her styres achor tag i listen*/
+a {
+  padding: 20px;
+  width: 100px;
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* her indikere jeg området Home*/
+#section1 {
+  height: 700px;
+  background: #4b4a54;
+  display: inline-block;
+  width: 100%;
+}
+
+/* her indikere jeg området prjoects*/
+#section2 {
+  height: 700px;
+  background: #b8dfdc;
+  display: inline-block;
+  width: 100%;
+}
+
+/* her indikere jeg området about*/
+#section3 {
+  height: 700px;
+  background: #4b4a54;
+  display: inline-block;
+  width: 100%;
+}
+
+.wrapper h1{
+  text-align: center;
+  font-size: 30px;
+}
+
+.img-area{
+  display: flex;
+  flex: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* her indikere jeg området contact*/
+#section4 {
+  height: 700px;
+  background: #000000;
+  background: url(bg2.jpg) no-repeat center;
+  background-size: cover;
+  display: inline-block;
+  width: 100%;
+  padding: 40px 0;
+}
+
+#section4 h1 {
+  color: #fafafa;
+  margin: 20px 30px 30px 30px;
+}
+
+/* her styres den lille dekorative kasse(devider)*/
+.border {
+  width: 200px;
+  height: 10px;
+  background: #fafafa;
+  margin: 40px auto;
+}
+
+#section4 form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+#section4 .contact-form-text {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20px 0;
+  background: #111;
+  padding: 20px 0;
+  outline: none;
+  color: #fafafa;
+  text-transform: inherit;
+  transition: 0.5s;
+}
+
+#section4 .contact-form-text:focus {
+  box-shadow: 0 0 10px 4px #4b4a54;
+}
+
+textarea.contact-form-text {
+  resize: none;
+  height: 120px;
+}
+
+.button {
+  margin: 0px 711px 0px 711px;
+background-color: #2a272a ;
+border-radius: 25px;
+display: flex;
+padding-left: 5px;
+}
+
+.button:hover {
+  background: #4b4a54;
+  cursor: pointer;
+}
+
+.footer-main{
+  position: fixed;
+  bottom: 0;
   background-color: #2a272a;
+  width: 100%;
+  height: 15px;
+  margin: auto;
+  padding: 20px 0;
 }
-
-html {
-  scroll-behavior: smooth;
+.footer-main p{
+  text-align: center;
+  color: #fafafa;
+  text-decoration: underline;
+  font-style: italic;
+  margin: auto;
 }
