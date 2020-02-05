@@ -72,9 +72,12 @@ a {
   width: 100%;
 }
 
+
 .wrapper h1{
   text-align: center;
   font-size: 30px;
+  color: #2a272a;
+  margin: 20px 30px 30px 30px;
 }
 
 .img-area{
@@ -83,6 +86,7 @@ a {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+
 }
 
 .single-img{
@@ -90,17 +94,28 @@ a {
 
 }
 
-img:hover{
-  opacity:60%;
-  transition: .9s;
+
+.border2 {
+  width: 200px;
+  height: 10px;
+  background: #2a272a;
+  margin: 40px auto;
 }
 
-p{
-  color: #fafafa;
+
+p a{
+  margin-left: 50px;
   text-align: center;
-  text-decoration: underline;
+  border: solid black;
 }
 
+p a:hover{
+  color: 2a272a;
+}
+p:hover{
+  transition: .9s;
+  cursor: pointer;
+}
 
 
 
