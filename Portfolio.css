@@ -51,7 +51,7 @@ a {
 /* her indikere jeg området Home*/
 #section1 {
   height: 700px;
-  background: #4b4a54;
+  background: #b8dfdc;
   display: inline-block;
   width: 100%;
 }
@@ -59,7 +59,7 @@ a {
 /* her indikere jeg området prjoects*/
 #section2 {
   height: 700px;
-  background: #b8dfdc;
+  background: #292927;
   display: inline-block;
   width: 100%;
 }
@@ -67,7 +67,7 @@ a {
 /* her indikere jeg området about*/
 #section3 {
   height: 100%;
-  background: #4b4a54;
+  background: #b8dfdc;
   display: inline-block;
   width: 100%;
 }
@@ -87,6 +87,7 @@ a {
 
 .single-img{
   padding: 0 20px 20px;
+
 }
 
 img:hover{
