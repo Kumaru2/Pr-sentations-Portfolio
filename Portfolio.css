@@ -66,7 +66,7 @@ a {
 
 /* her indikere jeg området about*/
 #section3 {
-  height: 700px;
+  height: 100%;
   background: #4b4a54;
   display: inline-block;
   width: 100%;
@@ -79,16 +79,36 @@ a {
 
 .img-area{
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
+.single-img{
+  padding: 0 20px 20px;
+}
+
+img:hover{
+  opacity:60%;
+  transition: .9s;
+}
+
+p{
+  color: #fafafa;
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+
+
+
+
 
 /* her indikere jeg området contact*/
 #section4 {
-  height: 700px;
+  height: 100%;
   background: #000000;
   background: url(bg2.jpg) no-repeat center;
   background-size: cover;
@@ -100,6 +120,16 @@ a {
 #section4 h1 {
   color: #fafafa;
   margin: 20px 30px 30px 30px;
+}
+
+#section4 p{
+float: right;
+  color: #fafafa;
+  bottom:5;
+  margin-right: 30px;
+  margin-top: 150px;
+  opacity: 50%;
+  font-style: italic;
 }
 
 /* her styres den lille dekorative kasse(devider)*/
